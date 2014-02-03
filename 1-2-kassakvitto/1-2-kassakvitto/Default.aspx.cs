@@ -11,12 +11,33 @@ namespace _1_2_kassakvitto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Getdiscount_Click(object sender, EventArgs e)
         {
+            if (IsValid) { 
             // när beräkna rabatt klickats
+                double userArmount;
+                Double.TryParse(Amount.Text, out userArmount);
+                
+                var receipt = new Model.Receipt(userArmount);
+                receipt.Calculate(userArmount);
+                
+                Subtotal.Text = String.Format("Totalt: {0:c}", receipt.Subtotal);
+                Subtotal.Visible = true;
+
+                DiscountRate.Text = String.Format("Rabattsats: {0:p0}", receipt.DiscountRate);
+                DiscountRate.Visible = true;
+
+                MoneyOff.Text = String.Format("Rabatt: {0:C}", receipt.MoneyOff);
+                MoneyOff.Visible = true;
+
+
+                Total.Text = String.Format("Att betala: {0:c2}", receipt.Total);
+                Total.Visible = true;
+
+                
+            }
         }
     }
 }
