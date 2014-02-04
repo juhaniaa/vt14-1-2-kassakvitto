@@ -15,12 +15,14 @@
         <asp:TextBox ID="Amount" runat="server" TextMode="SingleLine"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Total köpesumma får inte vara tom!" ControlToValidate="Amount"></asp:RequiredFieldValidator>
         <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Total köpesumma måste innehålla ett flyttal som är större än noll" ControlToValidate="Amount" Operator="GreaterThan" Type="Double" ValueToCompare="0"></asp:CompareValidator>
-        <asp:Button ID="Getdiscount" runat="server" Text="Beräkna rabatt" OnClick="Getdiscount_Click" />
         
-        <asp:Label ID="Subtotal" runat="server" Text="Label" Visible="false"></asp:Label>
-        <asp:Label ID="DiscountRate" runat="server" Text="Label" Visible="false"></asp:Label>
-        <asp:Label ID="MoneyOff" runat="server" Text="Label" Visible="false"></asp:Label>
-        <asp:Label ID="Total" runat="server" Text="Label" Visible="false"></asp:Label>
+        <asp:Button ID="Getdiscount" runat="server" Text="Beräkna rabatt" OnClick="Getdiscount_Click"/>
+        
+
+        <asp:Label ID="Subtotal" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>
+        <asp:Label ID="DiscountRate" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>
+        <asp:Label ID="MoneyOff" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>
+        <asp:Label ID="Total" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>
     </div>
     </form>
     <script src="Scripts/MyScript.js"></script>

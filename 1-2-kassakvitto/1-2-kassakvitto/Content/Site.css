@@ -1,10 +1,24 @@
 ﻿.Header {
     font-size:25px;
     float:left;
+    margin:5px;
 }
 
 .Label {
     font-size:15px;
     float:left;
     clear:both;
+    margin:10px;
+}
+
+#Amount {
+    float:left;
+    clear:both;  
+    margin:5px;
+}
+
+#Getdiscount {
+    float:left;
+    clear:both;
+    margin:5px;
 }
