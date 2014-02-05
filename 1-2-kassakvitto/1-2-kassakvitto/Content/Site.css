@@ -11,14 +11,8 @@
     margin:10px;
 }
 
-#Amount {
+#Amount, #Getdiscount {
     float:left;
     clear:both;  
-    margin:5px;
-}
-
-#Getdiscount {
-    float:left;
-    clear:both;
     margin:5px;
 }

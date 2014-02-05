@@ -15,14 +15,19 @@ namespace _1_2_kassakvitto
 
         protected void Getdiscount_Click(object sender, EventArgs e)
         {
-            if (IsValid) { 
             // när beräkna rabatt klickats
+
+            if (IsValid) { 
+
+                // och valideringen lyckats
                 double userArmount;
                 Double.TryParse(Amount.Text, out userArmount);
                 
+                // skapa nytt kvitto och kör Calculate funktionen som räknar ut de olika värdena
                 var receipt = new Model.Receipt(userArmount);
                 receipt.Calculate(userArmount);
                 
+                // lägg till värdena i kvittot och ändra till visible - true
                 Subtotal.Text = String.Format("Totalt: {0:c}", receipt.Subtotal);
                 Subtotal.Visible = true;
 

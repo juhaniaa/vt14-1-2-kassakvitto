@@ -3,7 +3,7 @@
   <Class Name="_1_2_kassakvitto.Default">
     <Position X="0.5" Y="0.5" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAEAAAAAAAgCCAIAAAAAAAAAAAAAIAAgA=</HashCode>
+      <HashCode>AAAAAAAAEAAEEAAAAAAAkCCAIAAAQBAAAAAAAAIAAgA=</HashCode>
       <FileName>Default.aspx.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -15,7 +15,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_1_2_kassakvitto.Model.Receipt">
-    <Position X="1" Y="4" Width="2.5" />
+    <Position X="4.5" Y="3.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAEAAAACgAQBAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Receipt.cs</FileName>
