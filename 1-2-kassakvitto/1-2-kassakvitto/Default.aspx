@@ -22,7 +22,7 @@
         <%-- Knapp för att beräkna rabatten --%>
         <asp:Button ID="Getdiscount" runat="server" Text="Beräkna rabatt" OnClick="Getdiscount_Click"/>
         
-        <%-- Kvittot renderas ut  --%>
+        <%-- Kvittot renderas ut --%>
         <asp:Label ID="Subtotal" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>
         <asp:Label ID="DiscountRate" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>
         <asp:Label ID="MoneyOff" runat="server" Text="Label" Visible="false" CssClass="Label"></asp:Label>

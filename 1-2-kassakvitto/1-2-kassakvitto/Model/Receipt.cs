@@ -27,11 +27,14 @@ namespace _1_2_kassakvitto.Model
 
         public Receipt(double subtotal) 
         {
-            this.Subtotal = subtotal;
+            Calculate(subtotal);
         }
 
         public void Calculate(double subtotal) 
-        { 
+        {
+
+            this.Subtotal = subtotal;
+
             // ta reda på rabattsats
             if (subtotal > 500) {
                 DiscountRate = 0;
